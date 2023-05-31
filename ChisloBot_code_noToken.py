@@ -545,19 +545,4 @@ def check_answer(message):
 
 print('Поехали!')
 
-def congratulate_grisha():
-    misha_id = 839506170
-    grisha_id = 1198720177
-    bot.send_message(grisha_id, "Привет, дорогой Гриша!\nС днём рождения!")
-    bot.send_sticker(grisha_id, "CAACAgIAAxkBAAEHcXRj0WT7akHhMZZ8oelUNmy2JUBd8gACWwAD-tTmHWOVBw8epntdLQQ")
-    time.sleep(10)
-    congratulation_text = "В начале 9 класса ты уезжал на сборы по физике, а я — в Сириус. Это казалось долгим.\nА теперь мы буквально не виделись целый год (и три дня). Но всё же, спасибо тебе за те времена:\nза пельмени в столовой,\n1 = 0 = палочку,\nи вот за ЧислоБота."
-    congratulation_text += "\nА теперь нам ещё и по 10000 лет. Много как-то, да?"
-    congratulation_text += "\nНу да ладно, это не важно. Пусть будет больше хорошего и меньше плохого, успехов тебе, и, надеюсь, мы всё-таки встретимся!"
-    bot.send_message(grisha_id,  congratulation_text)
-    time.sleep(10)
-    bot.send_photo(grisha_id, open('GrishaMishaPhoto.jpg', 'rb'));
-congratulate_grisha()
-bot.polling(none_stop=True)
-
 file.close()
